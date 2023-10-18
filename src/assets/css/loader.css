@@ -1,0 +1,42 @@
+#loader{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 1;
+  background-color: #fff;
+  z-index: 999999;
+  text-align: center;
+}
+.loader-div {
+   position: absolute;
+   top: 50%;
+   left: 240px;
+   z-index: 999999;
+   bottom: 50%;
+   left: 0;
+   right: 0;
+}
+.loading {
+   border: 3px solid #fff;
+   border-radius: 50%;
+   border-top: 3px solid #fff;
+   width: 75px;
+   height: 75px;
+   -webkit-animation: spin 1s linear infinite;
+   animation: spin 1s linear infinite;
+}
+.loading.dual-loader {
+   border-bottom: 3px solid #000;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
